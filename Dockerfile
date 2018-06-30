@@ -1,8 +1,8 @@
 FROM nginx
-
+USER root
 COPY wrapper.sh /
 
-COPY html /usr/share/nginx/html && \
-    chmod 0744 /usr/share/nginx/html
+COPY html /usr/share/nginx/html 
+    
 
 CMD ["./wrapper.sh"]
