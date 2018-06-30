@@ -1,6 +1,6 @@
 FROM nginx
 
-USER root
+USER nginx
 
 COPY wrapper.sh /
 
